@@ -3,7 +3,7 @@ class ExpirationDatesController < ProtectedController
 
   # GET /expiration_dates
   def index
-    @expiration_dates = ExpirationDate.all
+    @expiration_dates = current_user.expiration_dates.all
 
     render json: @expiration_dates
   end
@@ -20,7 +20,8 @@ class ExpirationDatesController < ProtectedController
     # @expiration_date = ExpirationDate.new(expiration_date_params)
 
     if @expiration_date.save
-      render json: @expiration_date, status: :created, location: @expiration_date
+      render json: @expiration_date, status: :created
+      # , location: @expiration_date
     else
       render json: @expiration_date.errors, status: :unprocessable_entity
     end
