@@ -43,11 +43,14 @@ class ExpirationDatesController < ProtectedController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_expiration_date
-      @expiration_date = ExpirationDate.find(params[:id])
+      @expiration_date = current_user.expiration_dates.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def expiration_date_params
       params.require(:expiration_date).permit(:date, :item_name, :category)
     end
+
+    # this is the code from examples_controller.rb
+    private :set_expiration_date, :expiration_date_params
 end
