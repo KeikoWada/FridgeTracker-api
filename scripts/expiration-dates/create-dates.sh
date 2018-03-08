@@ -11,7 +11,7 @@ curl "${API}${URL_PATH}" \
     "expiration_date": {
       "date": "'"${DATE}"'",
       "item_name": "'"${ITEM_NAME}"'",
-      "Category": "'"${CATEGORY}"'"
+      "category": "'"${CATEGORY}"'"
     }
   }'
 

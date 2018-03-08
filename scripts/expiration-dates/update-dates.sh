@@ -9,7 +9,7 @@ curl "http://localhost:4741/expiration_dates/${ID}" \
     "expiration_date": {
       "date": "'"${DATE}"'",
       "item_name": "'"${ITEM_NAME}"'",
-      "Category": "'"${CATEGORY}"'"
+      "category": "'"${CATEGORY}"'"
     }
   }'
 
