@@ -1,4 +1,4 @@
-class ExpirationDatesController < ApplicationController
+class ExpirationDatesController < ProtectedController
   before_action :set_expiration_date, only: [:show, :update, :destroy]
 
   # GET /expiration_dates
@@ -15,7 +15,9 @@ class ExpirationDatesController < ApplicationController
 
   # POST /expiration_dates
   def create
-    @expiration_date = ExpirationDate.new(expiration_date_params)
+    # this one line below is from examples_controller.rb
+    @expiration_date = current_user.expiration_dates.build(expiration_date_params)
+    # @expiration_date = ExpirationDate.new(expiration_date_params)
 
     if @expiration_date.save
       render json: @expiration_date, status: :created, location: @expiration_date
