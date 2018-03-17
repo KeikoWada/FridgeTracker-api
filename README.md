@@ -44,7 +44,7 @@ List unsolved problems which would be fixed in future iterations.
   - haven't get to creat join table yet
 
 
-Link to wireframes
+Link to ERD
   https://i.imgur.com/X8fZvgd.jpg
 
 user story
