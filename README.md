@@ -1,4 +1,4 @@
-##Links
+## Links
 
 - front-end side of repository:
   https://github.com/KeikoWada/FridgeTracker-front-end
@@ -8,7 +8,7 @@
   https://fridgetracker-kw.herokuapp.com/
 
 
-##instruction for FridgeTracker App;
+## instruction for FridgeTracker App;
   This is the App that you can track the expiration dates of each food in your fridge.
   1) create the list
     - insert the expiration date, item name, and category
@@ -20,11 +20,11 @@
     - you can search certain list by ID
 
 
-##List technologies used.
+## List technologies used.
   - Ruby on Rails
 
 
-##The plan for this project
+## The plan for this project
   1) make user story
      - to see what user is expecting for brower to do
   2) make lists of each required action according to the user stories.
@@ -32,7 +32,7 @@
   3) writing the code
 
 
-##The story about development process and problem-solving strategy.
+## The story about development process and problem-solving strategy.
    my process was
    1) back-end side
    2) front-end side
@@ -40,14 +40,14 @@
    for example, in back-end side, if I make table, i checked curl request in terminal, then move on to making relation between the table and table.
 
 
-##List unsolved problems which would be fixed in future iterations.
+## List unsolved problems which would be fixed in future iterations.
   - haven't get to creat join table yet
 
 
-##Link to ERD
+## Link to ERD
   https://i.imgur.com/X8fZvgd.jpg
 
-##user story
+## user story
   if I am a user
   - I want to be able to save my email address and password
   - I want to be able to sign-in with the email and password that I registered before
